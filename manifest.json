@@ -7,14 +7,21 @@
     "16": "icon.png",
     "128": "icon.png"
   },
-  "background": {
-    "service_worker": "background2.js"
-  },
   "action": {
     "default_icon": {
       "32": "icon.png"
     },
-    "default_title": "Open Popup"
+    "default_title": "Click to toggle",
+    "default_popup": "index.html"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+O",
+        "mac": "Command+Shift+O"
+      },
+      "description": "Toggle Popup"
+    }
   },
   "permissions": ["contextMenus"]
 }
