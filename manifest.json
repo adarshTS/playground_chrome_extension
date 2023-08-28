@@ -1,23 +1,20 @@
 {
-    "manifest_version": 3, 
-    "name": "Adarsh's Chrome Extension", 
-    "description": "My first Extension",
-    "version": "1.0",
-    "icons": {
-        "16": "icon.png",
-        "128": "icon.png"
-    },
-    "background": {
-        "service_worker": "background.js"
-      },
-    "action": {
+  "manifest_version": 3,
+  "name": "Adarsh's Chrome Extension",
+  "description": "My first Extension",
+  "version": "1.0",
+  "icons": {
+    "16": "icon.png",
+    "128": "icon.png"
+  },
+  "background": {
+    "service_worker": "background2.js"
+  },
+  "action": {
     "default_icon": {
-        "32": "icon.png"
+      "32": "icon.png"
     },
     "default_title": "Open Popup"
   },
-  "permissions": [
-    "contextMenus"
-  ]
-
+  "permissions": ["contextMenus"]
 }
