@@ -1,6 +1,5 @@
-window.onload = function () {
-  console.log(
-    "%cHello from your Chrome extension!",
-    "color: #fff; background: red; font-size: 20px; padding: 5px;"
-  );
-};
+chrome.runtime.onMessage.addListener((request) => {
+  if (request.message === "example_message") {
+    window.alert("Message Received");
+  }
+});

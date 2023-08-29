@@ -7,10 +7,18 @@
     "16": "icon.png",
     "128": "icon.png"
   },
+  "action": {
+    "default_icon": {
+      "16": "icon.png"
+    },
+    "default_title": "Send Message"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
   "content_scripts": [
     {
       "matches": ["https://www.bstackdemo.com/"],
-      "css": ["my-styles.css"],
       "js": ["content-script.js"]
     }
   ]
