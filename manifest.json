@@ -7,14 +7,11 @@
     "16": "icon.png",
     "128": "icon.png"
   },
-  "background": {
-    "service_worker": "background2.js"
-  },
-  "action": {
-    "default_icon": {
-      "32": "icon.png"
-    },
-    "default_title": "Open Popup"
-  },
-  "permissions": ["contextMenus"]
+  "content_scripts": [
+    {
+      "matches": ["https://www.bstackdemo.com/"],
+      "css": ["my-styles.css"],
+      "js": ["content-script.js"]
+    }
+  ]
 }
